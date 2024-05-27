@@ -1,0 +1,171 @@
+.authen-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url(../assets/login_night_bg.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.wrapper {
+    position: relative;
+    width: 420px;
+    height: 400px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .1);
+    backdrop-filter: blur(30px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    border-radius: 10px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+.wrapper.signup-page {
+    height: 600px;
+}
+
+.wrapper.recover-password-page {
+    height: 500px;
+}
+
+.wrapper.recover-password-page .form-box h1 {
+    font-size: 31px;
+}
+
+.form-box {
+    width: 100%;
+    padding: 40px;
+}
+
+.form-box h1 {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.input-box {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border: 2px solid rgba(255, 255, 255, .1);
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.input-box input {
+    width: 85%;
+    height: 80%;
+    margin-left: 10px;
+    font-size: 16px;
+    background: transparent;
+    color: #fff;
+    border: none;
+    outline: none;
+}
+
+.input-box input::placeholder {
+    color: #ffffff71;
+}
+
+.input-box i {
+    font-size: 30px;
+}
+
+.otp-box {
+    width: 50%;
+}
+
+.otp-area {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.send-otp-btn {
+    width: 40%;
+    height: 40px;
+    background: white;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+.counter-otp {
+    margin-bottom: 10px;
+    margin-left: 10px;
+    font-size: 15px;
+}
+
+.forgot-password {
+    text-align: right;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.forgot-password a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+}
+
+.forgot-password a:hover {
+    text-decoration: underline;
+}
+
+.form-box button {
+    width: 100%;
+    height: 45px;
+    background: #fff;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.login-signup-link {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-signup-link a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    margin-left: 5px;
+}
+
+.login-signup-link a:hover {
+    text-decoration: underline;
+}
+
+.agree-condition {
+    width: 100%;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.agree-condition input {
+    transform: scale(1.3);
+}
+
+#signupBtn {
+    display: inline-block;
+}
