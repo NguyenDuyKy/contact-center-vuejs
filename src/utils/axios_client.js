@@ -36,10 +36,6 @@ axiosClient.interceptors.request.use(
     }
 );
 
-// function delay(ms) {
-//     return new Promise(resolve => setTimeout(resolve, ms));
-// }
-
 axiosClient.interceptors.response.use(
     response => {
         if (response && response.data) {

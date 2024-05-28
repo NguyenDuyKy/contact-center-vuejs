@@ -1,10 +1,20 @@
-# contact-center-vuejs
+# Contact center VueJS
 
-## Project setup
+## 1. Project setup
 ```
 npm install
 ```
+### Create .env file with some variables
+```
+VUE_APP_API_URL="Your API server"
+```
+My config:
+```
+VUE_APP_API_URL=http://localhost:10000/api
+```
+### Setup path URL of your API in src/api
 
+## 2. Run
 ### Compiles and hot-reloads for development
 ```
 npm run serve
@@ -23,5 +33,3 @@ npm run lint
 ```
 serve -s dist
 ```
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
