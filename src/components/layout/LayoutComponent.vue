@@ -16,6 +16,9 @@
             <div class="softphone-btn" @click="showOrHideSoftPhone" id="softPhoneBtn">
                 <i class="bx bx-phone"></i>
             </div>
+            <div class="stringee-iframe-btn" @click="showStringeeIframe">
+                <i class="bx bxs-window-alt"></i>
+            </div>
         </div>
         <div class="body">
             <slot></slot>
@@ -27,6 +30,7 @@
 import { sidebarWidth } from "../sidebar/state.js";
 import { stringeeApi } from "../../api/api.js";
 import { onMounted } from "vue";
+import { useRouter } from "vue-router";
 
 // const isDropdownOpen = ref(false);
 // const currentManualStatus = ref();
@@ -36,7 +40,7 @@ import { onMounted } from "vue";
 //     { value: "SHORT BREAK", label: "SHORT BREAK", icon: "bx bxs-coffee" },
 //     { value: "NOT AVAILABLE", label: "NOT AVAILABLE", icon: "bx bxs-moon" }
 // ]);
-
+const router = useRouter();
 let StringeeSoftPhone;
 let numberList;
 let stringeeUserId;
@@ -55,7 +59,12 @@ const config = {
 const showOrHideSoftPhone = () => {
     if (StringeeSoftPhone.showMode === "full") StringeeSoftPhone.config({ showMode: "none" });
     else StringeeSoftPhone.config({ showMode: "full" });
-}
+};
+
+const showStringeeIframe = () => {
+    router.push({ name: "StringeeIframe" });
+};
+
 onMounted(async () => {
     try {
         if (window.StringeeSoftPhone) {
@@ -223,6 +232,21 @@ function settingClientEvents() {
     color: aliceblue;
     font-size: 30px;
     border-radius: 5px;
+    cursor: pointer;
+}
+
+.stringee-iframe-btn {
+    margin-left: 10px;
+    width: 40px;
+    height: 40px;
+    background: #0b62da;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+    font-size: 30px;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
 /* .manual-status {

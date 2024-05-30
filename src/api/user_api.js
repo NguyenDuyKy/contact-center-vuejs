@@ -20,6 +20,10 @@ const userApi = {
     recoverPassword: params => {
         const url = "/user/recover-password";
         return axiosClient.post(url, params);
+    },
+    updateUserInfo: (id, params) => {
+        const url = "/user/update-info/" + id;
+        return axiosClient.post(url, params);
     }
 }
 

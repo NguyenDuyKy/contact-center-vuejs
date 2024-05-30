@@ -18,29 +18,29 @@
                         <p>Gender</p>
                         <div class="gender-field">
                             <input type="radio" id="male" value="male" v-model="contactDetail.gender"
-                                :disabled="isViewMode">
+                                :disabled="isViewMode" />
                             <label for="male">Male</label>
                             <input type="radio" id="female" value="female" v-model="contactDetail.gender"
-                                :disabled="isViewMode">
+                                :disabled="isViewMode" />
                             <label for="female">Female</label>
                         </div>
                     </div>
                     <div class="contact-detail-body">
                         <p>Phone number</p>
                         <input type="text" v-model="contactDetail.phone_number" :disabled="isViewMode"
-                            @keypress="validateInputPhone" maxlength="20">
+                            @keypress="validateInputPhone" maxlength="20" />
                     </div>
                     <div class="contact-detail-body">
                         <p>Email</p>
-                        <input type="text" v-model="contactDetail.email" :disabled="isViewMode" maxlength="100">
+                        <input type="text" v-model="contactDetail.email" :disabled="isViewMode" maxlength="100" />
                     </div>
                     <div class="contact-detail-body">
                         <p>Address</p>
-                        <input type="text" v-model="contactDetail.address" :disabled="isViewMode" maxlength="100">
+                        <input type="text" v-model="contactDetail.address" :disabled="isViewMode" maxlength="100" />
                     </div>
                     <div class="contact-detail-body">
                         <p>Company</p>
-                        <input type="text" v-model="contactDetail.company" :disabled="isViewMode" maxlength="100">
+                        <input type="text" v-model="contactDetail.company" :disabled="isViewMode" maxlength="100" />
                     </div>
                     <div class="contact-detail-body">
                         <p>VIP</p>
@@ -255,6 +255,7 @@ export default {
 .contact-detail-header i {
     font-size: 40px;
     margin-right: 10px;
+    cursor: pointer;
 }
 
 .contact-detail-body {

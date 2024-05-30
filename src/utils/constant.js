@@ -27,7 +27,9 @@ const SUCCESS_DESC = {
     UPDATE_CONTACT: "Update contact successfully",
     DELETE_CONTACT: "Delete contact successfully",
     SEND_OTP: "Send OTP successfully, please check your phone",
-    RECOVER_PASSWORD: "Recover password successfully"
+    RECOVER_PASSWORD: "Recover password successfully",
+    UPDATE_USER: "Update user info successfully",
+    UPDATE_AGENT: "Update agent info successfully",
 }
 
 export { TOAST_CONFIG, ERROR_DESC, SUCCESS_DESC };

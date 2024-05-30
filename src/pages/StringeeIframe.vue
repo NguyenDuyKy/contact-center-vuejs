@@ -3,6 +3,7 @@
         <div class="stringee-iframe">
             <div class="iframe-wrapper">
                 <div class="header-field">
+                    <i class="bx bx-arrow-back" @click="backToHomePage"></i>
                     <div class="contactid-field">
                         <i class="bx bxs-id-card"></i>
                         <p>{{ contact._id }}</p>
@@ -141,6 +142,9 @@ export default {
         }
     },
     methods: {
+        backToHomePage() {
+            this.$router.push({ name: "HomePage" });
+        },
         enableEditMode() {
             this.isViewMode = false;
         },
@@ -247,11 +251,12 @@ export default {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
     margin-bottom: 10px;
 }
 
 .header-field .contactid-field {
+    margin-left: 20px;
+    margin-right: 20px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -259,6 +264,7 @@ export default {
 
 .header-field i {
     font-size: 30px;
+    cursor: pointer;
 }
 
 .contactid-field i {
