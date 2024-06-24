@@ -18,7 +18,8 @@ const ERROR_DESC = {
     NOT_FOUND_STRINGEE_SOFTPHONE: "Stringee softphone is not found",
     SELECT_NUMBER: "Please select number from softphone first",
     MISSING_EMAIL: "Please enter your email",
-    MISSING_NEW_PASSWORD: "Please enter your new password"
+    MISSING_NEW_PASSWORD: "Please enter your new password",
+    MISSING_CALLEE_ID: "Please enter caller's userId"
 };
 
 const SUCCESS_DESC = {
